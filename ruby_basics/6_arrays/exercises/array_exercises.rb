@@ -1,13 +1,20 @@
 def nil_array(number)
   # return an array containing `nil` the given number of times
+  the_array = []
+  x = 1
+  while x <= number
+    the_array.push(nil)
+    x = x + 1
+  end
+  return the_array
 end
 
-def first_element(array)
-  # return the first element of the array
+sdef first_element(array)
+  return array.first
 end
 
 def third_element(array)
-  # return the third element of the array
+  return array(2)
 end
 
 def last_three_elements(array)
@@ -15,7 +22,8 @@ def last_three_elements(array)
 end
 
 def add_element(array)
-  # add an element (of any value) to the array
+  array = array.push('blarg!')
+  return array
 end
 
 def remove_last_element(array)
@@ -34,6 +42,8 @@ end
 
 def array_concatenation(original, additional)
   # return an array adding the original and additional array together
+  the_array = original.concat(additional)
+  return the_array
 end
 
 def array_difference(original, comparison)
@@ -42,18 +52,23 @@ end
 
 def empty_array?(array)
   # return true if the array is empty
+  return array.empty?
 end
 
 def reverse(array)
   # return the reverse of the array
+  return array.reverse
 end
 
 def array_length(array)
   # return the length of the array
+  return array.length
 end
 
 def include?(array, value)
   # return true if the array includes the value
+  is_included = array.include?(value)
+  return is_included
 end
 
 def join(array, separator)
