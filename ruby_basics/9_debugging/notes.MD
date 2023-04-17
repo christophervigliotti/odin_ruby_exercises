@@ -8,6 +8,9 @@ Cannot successfuly run test due to pry-byebug not loading.  Am able to execute r
 
 ### Notes
 
+* debugging_exercises.rb found at https://github.com/christophervigliotti/odin_ruby_exercises/blob/main/ruby_basics/9_debugging/exercises/debugging_exercises.rb
+* debugging_exercises_spec.rb found at https://github.com/christophervigliotti/odin_ruby_exercises/blob/main/ruby_basics/9_debugging/spec/debugging_exercises_spec.rb
+* test.rb found at https://github.com/christophervigliotti/odin_ruby_exercises/blob/main/ruby_basics/9_debugging/test.rb 
 * `ruby test.rb` works without error (pry byebug loads)
 *  `rspec spec/debugging_exercises_spec.rb` throws the following error...
 ```
