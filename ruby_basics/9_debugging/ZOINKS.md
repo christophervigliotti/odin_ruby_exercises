@@ -6,6 +6,12 @@
 
 Cannot successfuly run test due to pry-byebug not loading.  Am able to execute ruby code in file test.rb (which contains the same `require 'pry-byebug'` line that is throwing an error when included at the top of file debugging_exercises.rb)
 
+### Solution
+
+1. add the following code to your Gemfile `gem 'pry-byebug', '~> 3.10', '>= 3.10.1'`
+2. run command `bundle install`
+3. you should now be able to run your tests using either of the following two commands: `rspec spec/debugging_exercises_spec.rb` or `rspec`
+
 ### Notes
 
 * debugging_exercises.rb found at https://github.com/christophervigliotti/odin_ruby_exercises/blob/main/ruby_basics/9_debugging/exercises/debugging_exercises.rb
