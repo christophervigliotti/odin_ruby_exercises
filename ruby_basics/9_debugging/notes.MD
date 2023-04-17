@@ -1,6 +1,13 @@
 # Notes
 
 ## pry-byebug error
+
+### Problem Statement
+
+Cannot successfuly run test due to pry-byebug not loading.  Am able to execute ruby code in file test.rb (which contains the same `require 'pry-byebug'` line that is throwing an error when included at the top of file debugging_exercises.rb)
+
+### Notes
+
 * `ruby test.rb` works without error (pry byebug loads)
 *  `rspec spec/debugging_exercises_spec.rb` throws the following error...
 ```
