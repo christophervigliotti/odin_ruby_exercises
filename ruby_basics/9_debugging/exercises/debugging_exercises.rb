@@ -57,8 +57,11 @@ end
 # Once you find the error, fix it and get the test to pass
 
 def yell_greeting(string)
+  logger = Logger.new(STDOUT)
   name = string
   name = name.upcase
   # pry.binding
+  logger.info 'debugging_exercises 63 name {#name}'
+  # where does logger write to?
   greeting = "WASSAP, #{name}!"
 end
