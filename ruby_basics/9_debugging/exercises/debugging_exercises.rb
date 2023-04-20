@@ -1,4 +1,4 @@
-# require 'pry-byebug'
+require 'pry-byebug'
 
 # First, we're going to practice reading the Stack Trace
 # Don't look at this method prior to running the test
@@ -57,6 +57,7 @@ end
 
 def yell_greeting(string)
   name = string
-  name = name.downcase
+  name = name.upcase
+  # pry.binding
   greeting = "WASSAP, #{name}!"
 end
